@@ -22,194 +22,195 @@
   .bt { font-size: 8px; fill: #555; }
   .sh { font-size: 8.5px; font-weight: 700; }
   .cl { font-size: 10px; font-weight: 600; text-anchor: middle; dominant-baseline: middle; }
-  .gl { font-size: 9px; font-weight: 700; text-anchor: middle; }
 </style>
 </head>
 <body>
-<svg viewBox="0 0 1000 2600" xmlns="http://www.w3.org/2000/svg">
+<svg viewBox="0 0 1000 2700" xmlns="http://www.w3.org/2000/svg">
 
 <text font-size="13" font-weight="600" x="500" y="22" text-anchor="middle" fill="#222">Individual entry points → entry point types</text>
-<text font-size="8.5" x="500" y="38" text-anchor="middle" fill="#888">Solid line = self-directed (KG · PR · some GV) · Dashed line = other-empowering (KS · RN · AV · RS · some GV) · Click to highlight</text>
+<text font-size="8.5" x="500" y="38" text-anchor="middle" fill="#888">Solid = self-directed (KG · PR · some GV) · Dashed = other-empowering (KS · RN · AV · RS · some GV) · Click to highlight</text>
 <text font-size="10" font-weight="600" x="220" y="56" text-anchor="middle" fill="#333">Individual entry points</text>
 <text font-size="10" font-weight="600" x="720" y="56" text-anchor="middle" fill="#333">Entry point types</text>
 
-<!-- CLUSTER BOXES
-     Scale: 7px per entry point
-     KG=22→154, KS=27→189, RN=23→161, AV=14→98, PR=14→98, GV=16→112, RS=7→70
-     gaps 14px
-     KG:  68-222  mid=145
-     KS: 236-425  mid=330
-     RN: 439-600  mid=519
-     AV: 614-712  mid=663
-     PR: 726-824  mid=775
-     GV: 838-950  mid=894
-     RS: 964-1034 mid=999
-     Group bg: 62-1040
+<!-- CLUSTER BOXES — standalone, no container frame
+     Scale 6px per entry point
+     KG=23→138: y=68  → bottom=206 mid=137
+     KS=39→234: y=220 → bottom=454 mid=337
+     RN=31→186: y=468 → bottom=654 mid=561
+     AV=19→114: y=668 → bottom=782 mid=725
+     PR=16→96:  y=796 → bottom=892 mid=844
+     GV=20→120: y=906 → bottom=1026 mid=966
+     RS=7→70:   y=1040→ bottom=1110 mid=1075
 -->
-<rect x="476" y="62" width="484" height="986" rx="8" fill="#EAF6EC" stroke="#2D7A3A" stroke-width="0.8" stroke-dasharray="5,3"/>
-<text class="gl" x="718" y="76" fill="#2D7A3A">ENTRY POINT TYPES</text>
+<g class="cb" id="cKG" onclick="hlC('KG')"><rect x="486" y="68"   width="464" height="138" rx="6" fill="#C0E6C8" stroke="#2D7A3A" stroke-width="1.2"/><text class="cl" x="718" y="137" fill="#1A4D22">Knowledge generation · n=23</text></g>
+<g class="cb" id="cKS" onclick="hlC('KS')"><rect x="486" y="220"  width="464" height="234" rx="6" fill="#C0E6C8" stroke="#2D7A3A" stroke-width="1.2"/><text class="cl" x="718" y="337" fill="#1A4D22">Knowledge sharing · n=39</text></g>
+<g class="cb" id="cRN" onclick="hlC('RN')"><rect x="486" y="468"  width="464" height="186" rx="6" fill="#C0E6C8" stroke="#2D7A3A" stroke-width="1.2"/><text class="cl" x="718" y="561" fill="#1A4D22">Relationship building · n=31</text></g>
+<g class="cb" id="cAV" onclick="hlC('AV')"><rect x="486" y="668"  width="464" height="114" rx="6" fill="#C0E6C8" stroke="#2D7A3A" stroke-width="1.2"/><text class="cl" x="718" y="725" fill="#1A4D22">Advocacy &amp; visibility · n=19</text></g>
+<g class="cb" id="cPR" onclick="hlC('PR')"><rect x="486" y="796"  width="464" height="96"  rx="6" fill="#C0E6C8" stroke="#2D7A3A" stroke-width="1.2"/><text class="cl" x="718" y="844" fill="#1A4D22">Practice &amp; innovation · n=16</text></g>
+<g class="cb" id="cGV" onclick="hlC('GV')"><rect x="486" y="906"  width="464" height="120" rx="6" fill="#C0E6C8" stroke="#2D7A3A" stroke-width="1.2"/><text class="cl" x="718" y="966" fill="#1A4D22">Governance &amp; policy · n=20</text></g>
+<g class="cb" id="cRS" onclick="hlC('RS')"><rect x="486" y="1040" width="464" height="70"  rx="6" fill="#C0E6C8" stroke="#2D7A3A" stroke-width="1.2"/><text class="cl" x="718" y="1075" fill="#1A4D22">Resourcing · n=7</text></g>
 
-<g class="cb" id="cKG" onclick="hlC('KG')"><rect x="486" y="84" width="464" height="154" rx="5" fill="#C0E6C8" stroke="#2D7A3A" stroke-width="1.2"/><text class="cl" x="718" y="161" fill="#1A4D22">Knowledge generation · n=22</text></g>
-<g class="cb" id="cKS" onclick="hlC('KS')"><rect x="486" y="252" width="464" height="189" rx="5" fill="#C0E6C8" stroke="#2D7A3A" stroke-width="1.2"/><text class="cl" x="718" y="346" fill="#1A4D22">Knowledge sharing · n=27</text></g>
-<g class="cb" id="cRN" onclick="hlC('RN')"><rect x="486" y="455" width="464" height="161" rx="5" fill="#C0E6C8" stroke="#2D7A3A" stroke-width="1.2"/><text class="cl" x="718" y="535" fill="#1A4D22">Relationship building · n=23</text></g>
-<g class="cb" id="cAV" onclick="hlC('AV')"><rect x="486" y="630" width="464" height="98" rx="5" fill="#C0E6C8" stroke="#2D7A3A" stroke-width="1.2"/><text class="cl" x="718" y="679" fill="#1A4D22">Advocacy &amp; visibility · n=14</text></g>
-<g class="cb" id="cPR" onclick="hlC('PR')"><rect x="486" y="742" width="464" height="98" rx="5" fill="#C0E6C8" stroke="#2D7A3A" stroke-width="1.2"/><text class="cl" x="718" y="791" fill="#1A4D22">Practice &amp; innovation · n=14</text></g>
-<g class="cb" id="cGV" onclick="hlC('GV')"><rect x="486" y="854" width="464" height="112" rx="5" fill="#C0E6C8" stroke="#2D7A3A" stroke-width="1.2"/><text class="cl" x="718" y="910" fill="#1A4D22">Governance &amp; policy · n=16</text></g>
-<g class="cb" id="cRS" onclick="hlC('RS')"><rect x="486" y="980" width="464" height="70" rx="5" fill="#C0E6C8" stroke="#2D7A3A" stroke-width="1.2"/><text class="cl" x="718" y="1015" fill="#1A4D22">Resourcing · n=7</text></g>
-
-<!-- ══ KNOWLEDGE GENERATION — solid lines ══ -->
-<text class="sh" x="8" y="78" fill="#2D7A3A">Knowledge generation</text>
-<text class="bt" x="12" y="93">Input providers: use TAPE to understand AE principles</text><path class="fl" id="kg0" data-cl="KG" d="M392,90 C435,90 460,110 486,110"/>
-<text class="bt" x="12" y="109">Farmers: use TAPE for systematic evaluation of AE</text><path class="fl" id="kg1" data-cl="KG" d="M392,106 C435,106 460,118 486,118"/>
-<text class="bt" x="12" y="125">Farmers: trial and error among farmers</text><path class="fl" id="kg2" data-cl="KG" d="M392,122 C435,122 460,126 486,126"/>
-<text class="bt" x="12" y="141">Processors: use TAPE to understand agroecological suppliers</text><path class="fl" id="kg3" data-cl="KG" d="M392,138 C435,138 460,134 486,134"/>
-<text class="bt" x="12" y="157">Processors: inquire about quality differences AE vs non-AE</text><path class="fl" id="kg4" data-cl="KG" d="M392,154 C435,154 460,140 486,140"/>
-<text class="bt" x="12" y="173">Retailers: use TAPE to understand agroecological suppliers</text><path class="fl" id="kg5" data-cl="KG" d="M392,170 C435,170 460,148 486,148"/>
-<text class="bt" x="12" y="189">Consumers: get informed on environmental and social performance of food choices</text><path class="fl" id="kg6" data-cl="KG" d="M392,186 C435,186 460,156 486,156"/>
-<text class="bt" x="12" y="205">Policy makers: visit lighthouse farms / learn costs and benefits of AE</text><path class="fl" id="kg7" data-cl="KG" d="M392,202 C435,202 460,162 486,162"/>
-<text class="bt" x="12" y="221">Policy makers: use TAPE to understand agroecological performance</text><path class="fl" id="kg8" data-cl="KG" d="M392,218 C435,218 460,168 486,168"/>
-<text class="bt" x="12" y="237">NGO staff: use TAPE to collect evidence on AE transition</text><path class="fl" id="kg9" data-cl="KG" d="M392,234 C435,234 460,176 486,176"/>
-<text class="bt" x="12" y="253">Extension agents: adopt farmer-centric learning approaches</text><path class="fl" id="kg10" data-cl="KG" d="M392,250 C435,250 460,184 486,184"/>
-<text class="bt" x="12" y="269">Teachers: get informed / critically analyze information</text><path class="fl" id="kg11" data-cl="KG" d="M392,266 C435,266 460,192 486,192"/>
-<text class="bt" x="12" y="285">Teachers: transform from teachers into co-learners</text><path class="fl" id="kg12" data-cl="KG" d="M392,282 C435,282 460,198 486,198"/>
-<text class="bt" x="12" y="301">Researchers: engage in transdisciplinary conversations</text><path class="fl" id="kg13" data-cl="KG" d="M392,298 C435,298 460,206 486,206"/>
-<text class="bt" x="12" y="317">Researchers: define knowledge gaps / student-led learning</text><path class="fl" id="kg14" data-cl="KG" d="M392,314 C435,314 460,212 486,212"/>
-<text class="bt" x="12" y="333">Researchers: set clear standards to measure AE performance / TAPE</text><path class="fl" id="kg15" data-cl="KG" d="M392,330 C435,330 460,218 486,218"/>
-<text class="bt" x="12" y="349">Researchers: collaborative and equitable knowledge development</text><path class="fl" id="kg16" data-cl="KG" d="M392,346 C435,346 460,224 486,224"/>
-<text class="bt" x="12" y="365">Researchers: ask questions / shape the research agenda</text><path class="fl" id="kg17" data-cl="KG" d="M392,362 C435,362 460,230 486,230"/>
-<text class="bt" x="12" y="381">Researchers: support farmers and policy makers in assessing AE performance</text><path class="fl" id="kg18" data-cl="KG" d="M392,378 C435,378 460,236 486,236"/>
-<text class="bt" x="12" y="397">Researchers: employ engaged listening and generative approaches</text><path class="fl" id="kg19" data-cl="KG" d="M392,394 C435,394 460,214 486,214"/>
-<text class="bt" x="12" y="413">Financial staff: use TAPE to set minimum AE criteria</text><path class="fl" id="kg20" data-cl="KG" d="M392,410 C435,410 460,208 486,208"/>
-<text class="bt" x="12" y="429">Researchers/Extension agents: support farmer-led experimentation</text><path class="fl" id="kg21" data-cl="KG" d="M392,426 C435,426 460,202 486,202"/>
+<!-- ══ KNOWLEDGE GENERATION — all solid ══
+     mid=137, entries fan into y=76..198
+-->
+<text class="sh" x="8" y="62" fill="#2D7A3A">Knowledge generation</text>
+<text class="bt" x="12" y="77">Input providers: use TAPE to understand AE principles</text><path class="fl" id="kg0" data-cl="KG" d="M392,74  C435,74  460,90  486,90"/>
+<text class="bt" x="12" y="93">Farmers: use TAPE for systematic evaluation of AE</text><path class="fl" id="kg1" data-cl="KG" d="M392,90  C435,90  460,98  486,98"/>
+<text class="bt" x="12" y="109">Farmers: trial and error among farmers</text><path class="fl" id="kg2" data-cl="KG" d="M392,106 C435,106 460,106 486,106"/>
+<text class="bt" x="12" y="125">Processors: use TAPE to understand agroecological suppliers</text><path class="fl" id="kg3" data-cl="KG" d="M392,122 C435,122 460,114 486,114"/>
+<text class="bt" x="12" y="141">Processors: inquire about quality differences AE vs non-AE</text><path class="fl" id="kg4" data-cl="KG" d="M392,138 C435,138 460,122 486,122"/>
+<text class="bt" x="12" y="157">Retailers: use TAPE to understand agroecological suppliers</text><path class="fl" id="kg5" data-cl="KG" d="M392,154 C435,154 460,130 486,130"/>
+<text class="bt" x="12" y="173">Consumers: get informed on environmental and social performance</text><path class="fl" id="kg6" data-cl="KG" d="M392,170 C435,170 460,138 486,138"/>
+<text class="bt" x="12" y="189">Policy makers: visit lighthouse farms / learn costs and benefits of AE</text><path class="fl" id="kg7" data-cl="KG" d="M392,186 C435,186 460,146 486,146"/>
+<text class="bt" x="12" y="205">Policy makers: use TAPE to understand agroecological performance</text><path class="fl" id="kg8" data-cl="KG" d="M392,202 C435,202 460,154 486,154"/>
+<text class="bt" x="12" y="221">NGO staff: use TAPE to collect evidence on AE transition</text><path class="fl" id="kg9" data-cl="KG" d="M392,218 C435,218 460,162 486,162"/>
+<text class="bt" x="12" y="237">Extension agents: adopt farmer-centric learning approaches</text><path class="fl" id="kg10" data-cl="KG" d="M392,234 C435,234 460,170 486,170"/>
+<text class="bt" x="12" y="253">Teachers: get informed / critically analyze information</text><path class="fl" id="kg11" data-cl="KG" d="M392,250 C435,250 460,178 486,178"/>
+<text class="bt" x="12" y="269">Teachers: transform from teachers into co-learners</text><path class="fl" id="kg12" data-cl="KG" d="M392,266 C435,266 460,186 486,186"/>
+<text class="bt" x="12" y="285">Researchers: engage in transdisciplinary conversations</text><path class="fl" id="kg13" data-cl="KG" d="M392,282 C435,282 460,158 486,158"/>
+<text class="bt" x="12" y="301">Researchers: define knowledge gaps / student-led learning</text><path class="fl" id="kg14" data-cl="KG" d="M392,298 C435,298 460,164 486,164"/>
+<text class="bt" x="12" y="317">Researchers: set clear standards to measure AE performance / TAPE</text><path class="fl" id="kg15" data-cl="KG" d="M392,314 C435,314 460,170 486,170"/>
+<text class="bt" x="12" y="333">Researchers: collaborative and equitable knowledge development</text><path class="fl" id="kg16" data-cl="KG" d="M392,330 C435,330 460,176 486,176"/>
+<text class="bt" x="12" y="349">Researchers: ask questions / shape the research agenda</text><path class="fl" id="kg17" data-cl="KG" d="M392,346 C435,346 460,182 486,182"/>
+<text class="bt" x="12" y="365">Researchers: support farmers and policy makers in assessing AE performance</text><path class="fl" id="kg18" data-cl="KG" d="M392,362 C435,362 460,188 486,188"/>
+<text class="bt" x="12" y="381">Researchers: employ engaged listening and generative approaches</text><path class="fl" id="kg19" data-cl="KG" d="M392,378 C435,378 460,194 486,194"/>
+<text class="bt" x="12" y="397">Financial staff: use TAPE to set minimum AE criteria</text><path class="fl" id="kg20" data-cl="KG" d="M392,394 C435,394 460,198 486,198"/>
+<text class="bt" x="12" y="413">Researchers/Extension agents: support farmer-led experimentation</text><path class="fl" id="kg21" data-cl="KG" d="M392,410 C435,410 460,202 486,202"/>
 
 <!-- ══ KNOWLEDGE SHARING — all dashed ══ -->
-<text class="sh" x="8" y="456" fill="#2D7A3A">Knowledge sharing</text>
-<text class="bt" x="12" y="471">Input providers: provide in-person advice and training on AE inputs to farmers</text><path class="fl dashed" id="ks0" data-cl="KS" d="M392,468 C435,468 460,274 486,274"/>
-<text class="bt" x="12" y="487">Input providers: develop and share communication materials on AE inputs</text><path class="fl dashed" id="ks1" data-cl="KS" d="M392,484 C435,484 460,282 486,282"/>
-<text class="bt" x="12" y="503">Farmers: farmer-to-farmer knowledge exchanges</text><path class="fl dashed" id="ks2" data-cl="KS" d="M392,500 C435,500 460,290 486,290"/>
-<text class="bt" x="12" y="519">Farmers: sharing results of trial and error</text><path class="fl dashed" id="ks3" data-cl="KS" d="M392,516 C435,516 460,298 486,298"/>
-<text class="bt" x="12" y="535">Farmers: farmer-to-farmer hands-on demonstrations</text><path class="fl dashed" id="ks4" data-cl="KS" d="M392,532 C435,532 460,306 486,306"/>
-<text class="bt" x="12" y="551">Farmers: farmer-to-farmer resource exchanges / seed sharing</text><path class="fl dashed" id="ks5" data-cl="KS" d="M392,548 C435,548 460,314 486,314"/>
-<text class="bt" x="12" y="567">NGO staff: visit lighthouse farms</text><path class="fl dashed" id="ks6" data-cl="KS" d="M392,564 C435,564 460,322 486,322"/>
-<text class="bt" x="12" y="583">NGO staff: set up AE demonstration farms</text><path class="fl dashed" id="ks7" data-cl="KS" d="M392,580 C435,580 460,330 486,330"/>
-<text class="bt" x="12" y="599">NGO staff: foster knowledge exchanges / mobilize farmers</text><path class="fl dashed" id="ks8" data-cl="KS" d="M392,596 C435,596 460,338 486,338"/>
-<text class="bt" x="12" y="615">NGO staff: provide knowledge resources and business cases</text><path class="fl dashed" id="ks9" data-cl="KS" d="M392,612 C435,612 460,346 486,346"/>
-<text class="bt" x="12" y="631">Extension agents: provide evidence for farmer decision-making</text><path class="fl dashed" id="ks10" data-cl="KS" d="M392,628 C435,628 460,354 486,354"/>
-<text class="bt" x="12" y="647">Extension agents: be responsive to farmers indigenous knowledge</text><path class="fl dashed" id="ks11" data-cl="KS" d="M392,644 C435,644 460,362 486,362"/>
-<text class="bt" x="12" y="663">Extension agents: link to lighthouse farmers</text><path class="fl dashed" id="ks12" data-cl="KS" d="M392,660 C435,660 460,370 486,370"/>
-<text class="bt" x="12" y="679">Extension agents: engage in evidence-based digital extension</text><path class="fl dashed" id="ks13" data-cl="KS" d="M392,676 C435,676 460,378 486,378"/>
-<text class="bt" x="12" y="695">Researchers: collaborative knowledge development with farmers</text><path class="fl dashed" id="ks14" data-cl="KS" d="M392,692 C435,692 460,386 486,386"/>
-<text class="bt" x="12" y="711">Researchers: policy briefs for policy makers</text><path class="fl dashed" id="ks15" data-cl="KS" d="M392,708 C435,708 460,394 486,394"/>
-<text class="bt" x="12" y="727">Researchers/Extension agents: provide knowledge resources for farmers</text><path class="fl dashed" id="ks16" data-cl="KS" d="M392,724 C435,724 460,402 486,402"/>
-<text class="bt" x="12" y="743">NGOs/Extension agents/Researchers: trainings on AE benefits for processors</text><path class="fl dashed" id="ks17" data-cl="KS" d="M392,740 C435,740 460,410 486,410"/>
-<text class="bt" x="12" y="759">NGOs/Extension agents/Researchers: trainings on AE benefits for retailers</text><path class="fl dashed" id="ks18" data-cl="KS" d="M392,756 C435,756 460,418 486,418"/>
-<text class="bt" x="12" y="775">NGOs/Extension agents/Researchers: raise awareness on benefits of consumption of AE products</text><path class="fl dashed" id="ks19" data-cl="KS" d="M392,772 C435,772 460,406 486,406"/>
-<text class="bt" x="12" y="791">Researchers: offer AE experiences through serious games to policy makers</text><path class="fl dashed" id="ks20" data-cl="KS" d="M392,788 C435,788 460,398 486,398"/>
-<text class="bt" x="12" y="807">Researchers/NGOs: provide knowledge resources on AE to teachers</text><path class="fl dashed" id="ks21" data-cl="KS" d="M392,804 C435,804 460,390 486,390"/>
-<text class="bt" x="12" y="823">Researchers/NGOs: trainings for financial staff on profitable AE examples</text><path class="fl dashed" id="ks22" data-cl="KS" d="M392,820 C435,820 460,382 486,382"/>
-<text class="bt" x="12" y="839">Researchers/Governments/NGOs: develop training modules for input providers</text><path class="fl dashed" id="ks23" data-cl="KS" d="M392,836 C435,836 460,374 486,374"/>
-<text class="bt" x="12" y="855">Researchers/Governments/NGOs: hands-on trainings for extension agents</text><path class="fl dashed" id="ks24" data-cl="KS" d="M392,852 C435,852 460,366 486,366"/>
-<text class="bt" x="12" y="871">Researchers/Governments: AE into extension curriculum</text><path class="fl dashed" id="ks25" data-cl="KS" d="M392,868 C435,868 460,358 486,358"/>
-<text class="bt" x="12" y="887">Researchers/Governments: engage extension agents in farmer-to-farmer exchanges</text><path class="fl dashed" id="ks26" data-cl="KS" d="M392,884 C435,884 460,350 486,350"/>
+<text class="sh" x="8" y="442" fill="#2D7A3A">Knowledge sharing</text>
+<text class="bt" x="12" y="457">Input providers: provide in-person advice and training on AE inputs to farmers</text><path class="fl dashed" id="ks0" data-cl="KS" d="M392,454 C435,454 460,252 486,252"/>
+<text class="bt" x="12" y="473">Input providers: develop and share communication materials on AE inputs</text><path class="fl dashed" id="ks1" data-cl="KS" d="M392,470 C435,470 460,260 486,260"/>
+<text class="bt" x="12" y="489">Farmers: farmer-to-farmer knowledge exchanges</text><path class="fl dashed" id="ks2" data-cl="KS" d="M392,486 C435,486 460,268 486,268"/>
+<text class="bt" x="12" y="505">Farmers: sharing results of trial and error</text><path class="fl dashed" id="ks3" data-cl="KS" d="M392,502 C435,502 460,276 486,276"/>
+<text class="bt" x="12" y="521">Farmers: farmer-to-farmer hands-on demonstrations</text><path class="fl dashed" id="ks4" data-cl="KS" d="M392,518 C435,518 460,284 486,284"/>
+<text class="bt" x="12" y="537">Farmers: farmer-to-farmer resource exchanges / seed sharing</text><path class="fl dashed" id="ks5" data-cl="KS" d="M392,534 C435,534 460,292 486,292"/>
+<text class="bt" x="12" y="553">NGO staff: visit lighthouse farms</text><path class="fl dashed" id="ks6" data-cl="KS" d="M392,550 C435,550 460,300 486,300"/>
+<text class="bt" x="12" y="569">NGO staff: set up AE demonstration farms</text><path class="fl dashed" id="ks7" data-cl="KS" d="M392,566 C435,566 460,308 486,308"/>
+<text class="bt" x="12" y="585">NGO staff: foster knowledge exchanges / mobilize farmers</text><path class="fl dashed" id="ks8" data-cl="KS" d="M392,582 C435,582 460,316 486,316"/>
+<text class="bt" x="12" y="601">NGO staff: provide knowledge resources and business cases</text><path class="fl dashed" id="ks9" data-cl="KS" d="M392,598 C435,598 460,324 486,324"/>
+<text class="bt" x="12" y="617">Extension agents: provide evidence for farmer decision-making</text><path class="fl dashed" id="ks10" data-cl="KS" d="M392,614 C435,614 460,332 486,332"/>
+<text class="bt" x="12" y="633">Extension agents: be responsive to farmers indigenous knowledge</text><path class="fl dashed" id="ks11" data-cl="KS" d="M392,630 C435,630 460,340 486,340"/>
+<text class="bt" x="12" y="649">Extension agents: link to lighthouse farmers</text><path class="fl dashed" id="ks12" data-cl="KS" d="M392,646 C435,646 460,348 486,348"/>
+<text class="bt" x="12" y="665">Extension agents: engage in evidence-based digital extension</text><path class="fl dashed" id="ks13" data-cl="KS" d="M392,662 C435,662 460,356 486,356"/>
+<text class="bt" x="12" y="681">Researchers: collaborative knowledge development with farmers</text><path class="fl dashed" id="ks14" data-cl="KS" d="M392,678 C435,678 460,364 486,364"/>
+<text class="bt" x="12" y="697">Researchers: policy briefs for policy makers</text><path class="fl dashed" id="ks15" data-cl="KS" d="M392,694 C435,694 460,372 486,372"/>
+<text class="bt" x="12" y="713">Researchers/Extension agents: provide knowledge resources for farmers</text><path class="fl dashed" id="ks16" data-cl="KS" d="M392,710 C435,710 460,380 486,380"/>
+<text class="bt" x="12" y="729">NGOs/Extension agents/Researchers: trainings on AE benefits for processors</text><path class="fl dashed" id="ks17" data-cl="KS" d="M392,726 C435,726 460,388 486,388"/>
+<text class="bt" x="12" y="745">NGOs/Extension agents/Researchers: trainings on AE benefits for retailers</text><path class="fl dashed" id="ks18" data-cl="KS" d="M392,742 C435,742 460,396 486,396"/>
+<text class="bt" x="12" y="761">NGOs/Extension agents/Researchers: raise awareness on benefits of consumption of AE products</text><path class="fl dashed" id="ks19" data-cl="KS" d="M392,758 C435,758 460,404 486,404"/>
+<text class="bt" x="12" y="777">Researchers: offer AE experiences through serious games to policy makers</text><path class="fl dashed" id="ks20" data-cl="KS" d="M392,774 C435,774 460,412 486,412"/>
+<text class="bt" x="12" y="793">Researchers/NGOs: provide knowledge resources on AE to teachers</text><path class="fl dashed" id="ks21" data-cl="KS" d="M392,790 C435,790 460,420 486,420"/>
+<text class="bt" x="12" y="809">Researchers/NGOs: trainings for financial staff on profitable AE examples</text><path class="fl dashed" id="ks22" data-cl="KS" d="M392,806 C435,806 460,428 486,428"/>
+<text class="bt" x="12" y="825">Researchers/Governments/NGOs: develop training modules for input providers</text><path class="fl dashed" id="ks23" data-cl="KS" d="M392,822 C435,822 460,436 486,436"/>
+<text class="bt" x="12" y="841">Researchers/Governments/NGOs: hands-on trainings for extension agents</text><path class="fl dashed" id="ks24" data-cl="KS" d="M392,838 C435,838 460,444 486,444"/>
+<text class="bt" x="12" y="857">Researchers/Governments: AE into extension curriculum</text><path class="fl dashed" id="ks25" data-cl="KS" d="M392,854 C435,854 460,388 486,388"/>
+<text class="bt" x="12" y="873">Researchers/Governments: engage extension agents in farmer-to-farmer exchanges</text><path class="fl dashed" id="ks26" data-cl="KS" d="M392,870 C435,870 460,380 486,380"/>
+<text class="bt" x="12" y="889">Teachers: share AE knowledge and evidence with students</text><path class="fl dashed" id="ks27" data-cl="KS" d="M392,886 C435,886 460,372 486,372"/>
 
 <!-- ══ RELATIONSHIP BUILDING — all dashed ══ -->
-<text class="sh" x="8" y="914" fill="#2D7A3A">Relationship building</text>
-<text class="bt" x="12" y="929">Input providers: integrated business models / refer to AE suppliers</text><path class="fl dashed" id="rn0" data-cl="RN" d="M392,926 C435,926 460,470 486,470"/>
-<text class="bt" x="12" y="945">Farmers: organize in farmer groups / communities of practice</text><path class="fl dashed" id="rn1" data-cl="RN" d="M392,942 C435,942 460,478 486,478"/>
-<text class="bt" x="12" y="961">Farmers: strengthen community and social solidarity</text><path class="fl dashed" id="rn2" data-cl="RN" d="M392,958 C435,958 460,486 486,486"/>
-<text class="bt" x="12" y="977">Processors: connect to farmers and consumers in geographic area</text><path class="fl dashed" id="rn3" data-cl="RN" d="M392,974 C435,974 460,494 486,494"/>
-<text class="bt" x="12" y="993">Retailers: strengthen direct linkages with value chain actors</text><path class="fl dashed" id="rn4" data-cl="RN" d="M392,990 C435,990 460,502 486,502"/>
-<text class="bt" x="12" y="1009">Policy makers: visit and talk to all value chain actors</text><path class="fl dashed" id="rn5" data-cl="RN" d="M392,1006 C435,1006 460,510 486,510"/>
-<text class="bt" x="12" y="1025">Policy makers: bring stakeholders together / encourage exchanges</text><path class="fl dashed" id="rn6" data-cl="RN" d="M392,1022 C435,1022 460,518 486,518"/>
-<text class="bt" x="12" y="1041">NGO staff: visit and talk to value chain actors</text><path class="fl dashed" id="rn7" data-cl="RN" d="M392,1038 C435,1038 460,526 486,526"/>
-<text class="bt" x="12" y="1057">NGO staff: invite different AE stakeholders to trainings</text><path class="fl dashed" id="rn8" data-cl="RN" d="M392,1054 C435,1054 460,534 486,534"/>
-<text class="bt" x="12" y="1073">NGO staff: co-develop and implement action agendas</text><path class="fl dashed" id="rn9" data-cl="RN" d="M392,1070 C435,1070 460,542 486,542"/>
-<text class="bt" x="12" y="1089">Teachers: bring practitioners and activists into classroom</text><path class="fl dashed" id="rn10" data-cl="RN" d="M392,1086 C435,1086 460,550 486,550"/>
-<text class="bt" x="12" y="1105">Teachers: suggest internships with sustainability actors</text><path class="fl dashed" id="rn11" data-cl="RN" d="M392,1102 C435,1102 460,558 486,558"/>
-<text class="bt" x="12" y="1121">Teachers: seek alliances with public bodies</text><path class="fl dashed" id="rn12" data-cl="RN" d="M392,1118 C435,1118 460,566 486,566"/>
-<text class="bt" x="12" y="1137">Researchers: create transdisciplinary multi-actor partnerships</text><path class="fl dashed" id="rn13" data-cl="RN" d="M392,1134 C435,1134 460,574 486,574"/>
-<text class="bt" x="12" y="1153">Researchers: support farmers and policy makers in identifying AE strengths</text><path class="fl dashed" id="rn14" data-cl="RN" d="M392,1150 C435,1150 460,582 486,582"/>
-<text class="bt" x="12" y="1169">Researchers: talk to financial institutions on AE profitability</text><path class="fl dashed" id="rn15" data-cl="RN" d="M392,1166 C435,1166 460,544 486,544"/>
-<text class="bt" x="12" y="1185">Researchers/NGOs/Extension agents: link farmers to AE movement</text><path class="fl dashed" id="rn16" data-cl="RN" d="M392,1182 C435,1182 460,536 486,536"/>
-<text class="bt" x="12" y="1201">Processors: strengthen linkages between value chain actors</text><path class="fl dashed" id="rn17" data-cl="RN" d="M392,1198 C435,1198 460,528 486,528"/>
-<text class="bt" x="12" y="1217">NGOs/Governments/Researchers: strengthen consumers view of farmers</text><path class="fl dashed" id="rn18" data-cl="RN" d="M392,1214 C435,1214 460,520 486,520"/>
-<text class="bt" x="12" y="1233">NGOs/Retailers/Policy makers: foster producer-consumer relations</text><path class="fl dashed" id="rn19" data-cl="RN" d="M392,1230 C435,1230 460,512 486,512"/>
-<text class="bt" x="12" y="1249">NGO staff: provide network / link to other value chain actors</text><path class="fl dashed" id="rn20" data-cl="RN" d="M392,1246 C435,1246 460,504 486,504"/>
-<text class="bt" x="12" y="1265">Value chain actors: collaborate with teachers for real-life AE experiences</text><path class="fl dashed" id="rn21" data-cl="RN" d="M392,1262 C435,1262 460,496 486,496"/>
-<text class="bt" x="12" y="1281">Farmers/Processors/NGOs: communicate demand for AE investments to financial institutions</text><path class="fl dashed" id="rn22" data-cl="RN" d="M392,1278 C435,1278 460,488 486,488"/>
+<text class="sh" x="8" y="918" fill="#2D7A3A">Relationship building</text>
+<text class="bt" x="12" y="933">Input providers: integrated business models / refer to AE suppliers</text><path class="fl dashed" id="rn0" data-cl="RN" d="M392,930 C435,930 460,482 486,482"/>
+<text class="bt" x="12" y="949">Farmers: organize in farmer groups / communities of practice</text><path class="fl dashed" id="rn1" data-cl="RN" d="M392,946 C435,946 460,490 486,490"/>
+<text class="bt" x="12" y="965">Farmers: strengthen community and social solidarity</text><path class="fl dashed" id="rn2" data-cl="RN" d="M392,962 C435,962 460,498 486,498"/>
+<text class="bt" x="12" y="981">Farmers: foster collaborative and equitable knowledge development</text><path class="fl dashed" id="rn3" data-cl="RN" d="M392,978 C435,978 460,506 486,506"/>
+<text class="bt" x="12" y="997">Processors: connect to farmers and consumers in geographic area</text><path class="fl dashed" id="rn4" data-cl="RN" d="M392,994 C435,994 460,514 486,514"/>
+<text class="bt" x="12" y="1013">Retailers: strengthen direct linkages with value chain actors</text><path class="fl dashed" id="rn5" data-cl="RN" d="M392,1010 C435,1010 460,522 486,522"/>
+<text class="bt" x="12" y="1029">Policy makers: visit and talk to all value chain actors</text><path class="fl dashed" id="rn6" data-cl="RN" d="M392,1026 C435,1026 460,530 486,530"/>
+<text class="bt" x="12" y="1045">Policy makers: bring stakeholders together / encourage exchanges</text><path class="fl dashed" id="rn7" data-cl="RN" d="M392,1042 C435,1042 460,538 486,538"/>
+<text class="bt" x="12" y="1061">NGO staff: visit and talk to value chain actors</text><path class="fl dashed" id="rn8" data-cl="RN" d="M392,1058 C435,1058 460,546 486,546"/>
+<text class="bt" x="12" y="1077">NGO staff: invite different AE stakeholders to trainings</text><path class="fl dashed" id="rn9" data-cl="RN" d="M392,1074 C435,1074 460,554 486,554"/>
+<text class="bt" x="12" y="1093">NGO staff: co-develop and implement action agendas</text><path class="fl dashed" id="rn10" data-cl="RN" d="M392,1090 C435,1090 460,562 486,562"/>
+<text class="bt" x="12" y="1109">Teachers: bring practitioners and activists into classroom</text><path class="fl dashed" id="rn11" data-cl="RN" d="M392,1106 C435,1106 460,570 486,570"/>
+<text class="bt" x="12" y="1125">Teachers: suggest internships with sustainability actors</text><path class="fl dashed" id="rn12" data-cl="RN" d="M392,1122 C435,1122 460,578 486,578"/>
+<text class="bt" x="12" y="1141">Teachers: seek alliances with public bodies</text><path class="fl dashed" id="rn13" data-cl="RN" d="M392,1138 C435,1138 460,586 486,586"/>
+<text class="bt" x="12" y="1157">Researchers: create transdisciplinary multi-actor partnerships</text><path class="fl dashed" id="rn14" data-cl="RN" d="M392,1154 C435,1154 460,594 486,594"/>
+<text class="bt" x="12" y="1173">Researchers: support farmers and policy makers in identifying AE strengths</text><path class="fl dashed" id="rn15" data-cl="RN" d="M392,1170 C435,1170 460,560 486,560"/>
+<text class="bt" x="12" y="1189">Researchers: talk to financial institutions on AE profitability</text><path class="fl dashed" id="rn16" data-cl="RN" d="M392,1186 C435,1186 460,552 486,552"/>
+<text class="bt" x="12" y="1205">Researchers/NGOs/Extension agents: link farmers to AE movement</text><path class="fl dashed" id="rn17" data-cl="RN" d="M392,1202 C435,1202 460,544 486,544"/>
+<text class="bt" x="12" y="1221">Processors: strengthen linkages between value chain actors</text><path class="fl dashed" id="rn18" data-cl="RN" d="M392,1218 C435,1218 460,536 486,536"/>
+<text class="bt" x="12" y="1237">NGOs/Governments/Researchers: strengthen consumers view of farmers</text><path class="fl dashed" id="rn19" data-cl="RN" d="M392,1234 C435,1234 460,528 486,528"/>
+<text class="bt" x="12" y="1253">NGOs/Retailers/Policy makers/Researchers: foster producer-consumer relations</text><path class="fl dashed" id="rn20" data-cl="RN" d="M392,1250 C435,1250 460,520 486,520"/>
+<text class="bt" x="12" y="1269">NGO staff: provide network / link to other value chain actors</text><path class="fl dashed" id="rn21" data-cl="RN" d="M392,1266 C435,1266 460,512 486,512"/>
+<text class="bt" x="12" y="1285">Value chain actors: collaborate with teachers for real-life AE experiences</text><path class="fl dashed" id="rn22" data-cl="RN" d="M392,1282 C435,1282 460,504 486,504"/>
+<text class="bt" x="12" y="1301">Farmers/Processors/NGOs: communicate demand for AE investments to financial institutions</text><path class="fl dashed" id="rn23" data-cl="RN" d="M392,1298 C435,1298 460,496 486,496"/>
 
 <!-- ══ ADVOCACY & VISIBILITY — all dashed ══ -->
-<text class="sh" x="8" y="1308" fill="#2D7A3A">Advocacy &amp; visibility</text>
-<text class="bt" x="12" y="1323">Processors: experience and communicate quality differences</text><path class="fl dashed" id="av0" data-cl="AV" d="M392,1320 C435,1320 460,646 486,646"/>
-<text class="bt" x="12" y="1339">Processors: create awareness among retailers and consumers of AE value</text><path class="fl dashed" id="av1" data-cl="AV" d="M392,1336 C435,1336 460,652 486,652"/>
-<text class="bt" x="12" y="1355">Retailers: effective promotion / marketing strategies for AE</text><path class="fl dashed" id="av2" data-cl="AV" d="M392,1352 C435,1352 460,658 486,658"/>
-<text class="bt" x="12" y="1371">Teachers: open classes to broader audience as AE knowledge multipliers</text><path class="fl dashed" id="av3" data-cl="AV" d="M392,1368 C435,1368 460,664 486,664"/>
-<text class="bt" x="12" y="1387">Researchers: raise awareness of evidence-based AE success cases</text><path class="fl dashed" id="av4" data-cl="AV" d="M392,1384 C435,1384 460,670 486,670"/>
-<text class="bt" x="12" y="1403">Researchers: link to policy makers for endorsement and support</text><path class="fl dashed" id="av5" data-cl="AV" d="M392,1400 C435,1400 460,676 486,676"/>
-<text class="bt" x="12" y="1419">Financial staff: showcase environmental engagement through AE funding</text><path class="fl dashed" id="av6" data-cl="AV" d="M392,1416 C435,1416 460,682 486,682"/>
-<text class="bt" x="12" y="1435">NGOs/Extension agents/Governments: awareness campaigns on AE for input providers</text><path class="fl dashed" id="av7" data-cl="AV" d="M392,1432 C435,1432 460,658 486,658"/>
-<text class="bt" x="12" y="1451">NGOs/Governments/Researchers: field days to showcase AE findings for farmers</text><path class="fl dashed" id="av8" data-cl="AV" d="M392,1448 C435,1448 460,664 486,664"/>
-<text class="bt" x="12" y="1467">Processors: inform consumers about benefits of agroecological farming</text><path class="fl dashed" id="av9" data-cl="AV" d="M392,1464 C435,1464 460,670 486,670"/>
-<text class="bt" x="12" y="1483">Governments/NGOs: target behavior change interventions for retailers</text><path class="fl dashed" id="av10" data-cl="AV" d="M392,1480 C435,1480 460,676 486,676"/>
-<text class="bt" x="12" y="1499">NGOs/Governments/Researchers: promote awareness on AE value for consumers</text><path class="fl dashed" id="av11" data-cl="AV" d="M392,1496 C435,1496 460,682 486,682"/>
-<text class="bt" x="12" y="1515">NGOs/Governments/Researchers: transparent labeling and third-party validation</text><path class="fl dashed" id="av12" data-cl="AV" d="M392,1512 C435,1512 460,688 486,688"/>
-<text class="bt" x="12" y="1531">Extension agents: promote awareness on added values of AE production</text><path class="fl dashed" id="av13" data-cl="AV" d="M392,1528 C435,1528 460,694 486,694"/>
+<text class="sh" x="8" y="1330" fill="#2D7A3A">Advocacy &amp; visibility</text>
+<text class="bt" x="12" y="1345">Processors: experience and communicate quality differences</text><path class="fl dashed" id="av0" data-cl="AV" d="M392,1342 C435,1342 460,692 486,692"/>
+<text class="bt" x="12" y="1361">Processors: create awareness among retailers and consumers of AE value</text><path class="fl dashed" id="av1" data-cl="AV" d="M392,1358 C435,1358 460,700 486,700"/>
+<text class="bt" x="12" y="1377">Retailers: effective promotion / marketing strategies for AE</text><path class="fl dashed" id="av2" data-cl="AV" d="M392,1374 C435,1374 460,708 486,708"/>
+<text class="bt" x="12" y="1393">Teachers: open classes to broader audience as AE knowledge multipliers</text><path class="fl dashed" id="av3" data-cl="AV" d="M392,1390 C435,1390 460,716 486,716"/>
+<text class="bt" x="12" y="1409">Researchers: raise awareness of evidence-based AE success cases</text><path class="fl dashed" id="av4" data-cl="AV" d="M392,1406 C435,1406 460,724 486,724"/>
+<text class="bt" x="12" y="1425">Researchers: link to policy makers for endorsement and support</text><path class="fl dashed" id="av5" data-cl="AV" d="M392,1422 C435,1422 460,732 486,732"/>
+<text class="bt" x="12" y="1441">Financial staff: showcase environmental engagement through AE funding</text><path class="fl dashed" id="av6" data-cl="AV" d="M392,1438 C435,1438 460,740 486,740"/>
+<text class="bt" x="12" y="1457">Policy makers: publicly honor and promote AE farmers and their practices</text><path class="fl dashed" id="av7" data-cl="AV" d="M392,1454 C435,1454 460,748 486,748"/>
+<text class="bt" x="12" y="1473">NGOs/Extension agents/Governments: awareness campaigns on AE for input providers</text><path class="fl dashed" id="av8" data-cl="AV" d="M392,1470 C435,1470 460,724 486,724"/>
+<text class="bt" x="12" y="1489">NGOs/Governments/Researchers: field days to showcase AE findings for farmers</text><path class="fl dashed" id="av9" data-cl="AV" d="M392,1486 C435,1486 460,732 486,732"/>
+<text class="bt" x="12" y="1505">Processors: inform consumers about benefits of agroecological farming</text><path class="fl dashed" id="av10" data-cl="AV" d="M392,1502 C435,1502 460,740 486,740"/>
+<text class="bt" x="12" y="1521">Governments/NGOs: target behavior change interventions for retailers</text><path class="fl dashed" id="av11" data-cl="AV" d="M392,1518 C435,1518 460,748 486,748"/>
+<text class="bt" x="12" y="1537">NGOs/Governments/Researchers: promote awareness on AE value for consumers</text><path class="fl dashed" id="av12" data-cl="AV" d="M392,1534 C435,1534 460,756 486,756"/>
+<text class="bt" x="12" y="1553">NGOs/Governments/Researchers: transparent labeling and third-party validation</text><path class="fl dashed" id="av13" data-cl="AV" d="M392,1550 C435,1550 460,764 486,764"/>
+<text class="bt" x="12" y="1569">Extension agents: promote awareness on added values of AE production</text><path class="fl dashed" id="av14" data-cl="AV" d="M392,1566 C435,1566 460,772 486,772"/>
 
 <!-- ══ PRACTICE & INNOVATION — all solid ══ -->
-<text class="sh" x="8" y="1558" fill="#2D7A3A">Practice &amp; innovation</text>
-<text class="bt" x="12" y="1573">Input providers: smart logistics / joint digital solutions</text><path class="fl" id="pr0" data-cl="PR" d="M392,1570 C435,1570 460,758 486,758"/>
-<text class="bt" x="12" y="1589">Input providers: make AE inputs available / last-mile distribution</text><path class="fl" id="pr1" data-cl="PR" d="M392,1586 C435,1586 460,766 486,766"/>
-<text class="bt" x="12" y="1605">Input providers: specialize / offer niche AE products</text><path class="fl" id="pr2" data-cl="PR" d="M392,1602 C435,1602 460,774 486,774"/>
-<text class="bt" x="12" y="1621">Farmers: incorporate AE practices that reduce external input costs</text><path class="fl" id="pr3" data-cl="PR" d="M392,1618 C435,1618 460,782 486,782"/>
-<text class="bt" x="12" y="1637">Farmers: direct sales to consumers through subscription models</text><path class="fl" id="pr4" data-cl="PR" d="M392,1634 C435,1634 460,790 486,790"/>
-<text class="bt" x="12" y="1653">Processors: preserve nutritional value through processing techniques</text><path class="fl" id="pr5" data-cl="PR" d="M392,1650 C435,1650 460,798 486,798"/>
-<text class="bt" x="12" y="1669">Processors: recycle by-products</text><path class="fl" id="pr6" data-cl="PR" d="M392,1666 C435,1666 460,806 486,806"/>
-<text class="bt" x="12" y="1685">Retailers: set up collaborative supermarkets</text><path class="fl" id="pr7" data-cl="PR" d="M392,1682 C435,1682 460,782 486,782"/>
-<text class="bt" x="12" y="1701">Retailers: invest in solar-powered cold storage / transportation</text><path class="fl" id="pr8" data-cl="PR" d="M392,1698 C435,1698 460,790 486,790"/>
-<text class="bt" x="12" y="1717">Consumers: buy from farmers markets</text><path class="fl" id="pr9" data-cl="PR" d="M392,1714 C435,1714 460,798 486,798"/>
-<text class="bt" x="12" y="1733">Consumers: pay price premium for AE / local / fair-trade food</text><path class="fl" id="pr10" data-cl="PR" d="M392,1730 C435,1730 460,806 486,806"/>
-<text class="bt" x="12" y="1749">Consumers: recycle organic waste for farming inputs</text><path class="fl" id="pr11" data-cl="PR" d="M392,1746 C435,1746 460,774 486,774"/>
-<text class="bt" x="12" y="1765">Teachers: use school gardens to build AE competencies</text><path class="fl" id="pr12" data-cl="PR" d="M392,1762 C435,1762 460,766 486,766"/>
-<text class="bt" x="12" y="1781">Teachers: develop living curriculum / experiential learning</text><path class="fl" id="pr13" data-cl="PR" d="M392,1778 C435,1778 460,758 486,758"/>
+<text class="sh" x="8" y="1598" fill="#2D7A3A">Practice &amp; innovation</text>
+<text class="bt" x="12" y="1613">Input providers: smart logistics / joint digital solutions</text><path class="fl" id="pr0" data-cl="PR" d="M392,1610 C435,1610 460,816 486,816"/>
+<text class="bt" x="12" y="1629">Input providers: make AE inputs available / last-mile distribution</text><path class="fl" id="pr1" data-cl="PR" d="M392,1626 C435,1626 460,824 486,824"/>
+<text class="bt" x="12" y="1645">Input providers: specialize / offer niche AE products</text><path class="fl" id="pr2" data-cl="PR" d="M392,1642 C435,1642 460,832 486,832"/>
+<text class="bt" x="12" y="1661">Farmers: incorporate AE practices that reduce external input costs</text><path class="fl" id="pr3" data-cl="PR" d="M392,1658 C435,1658 460,840 486,840"/>
+<text class="bt" x="12" y="1677">Farmers: direct sales to consumers through subscription models</text><path class="fl" id="pr4" data-cl="PR" d="M392,1674 C435,1674 460,848 486,848"/>
+<text class="bt" x="12" y="1693">Processors: preserve nutritional value through processing techniques</text><path class="fl" id="pr5" data-cl="PR" d="M392,1690 C435,1690 460,840 486,840"/>
+<text class="bt" x="12" y="1709">Processors: recycle by-products</text><path class="fl" id="pr6" data-cl="PR" d="M392,1706 C435,1706 460,848 486,848"/>
+<text class="bt" x="12" y="1725">Retailers: set up collaborative supermarkets</text><path class="fl" id="pr7" data-cl="PR" d="M392,1722 C435,1722 460,832 486,832"/>
+<text class="bt" x="12" y="1741">Retailers: invest in solar-powered cold storage / transportation</text><path class="fl" id="pr8" data-cl="PR" d="M392,1738 C435,1738 460,840 486,840"/>
+<text class="bt" x="12" y="1757">Consumers: buy from farmers markets</text><path class="fl" id="pr9" data-cl="PR" d="M392,1754 C435,1754 460,848 486,848"/>
+<text class="bt" x="12" y="1773">Consumers: pay price premium for AE / local / fair-trade food</text><path class="fl" id="pr10" data-cl="PR" d="M392,1770 C435,1770 460,856 486,856"/>
+<text class="bt" x="12" y="1789">Consumers: recycle organic waste for farming inputs</text><path class="fl" id="pr11" data-cl="PR" d="M392,1786 C435,1786 460,832 486,832"/>
+<text class="bt" x="12" y="1805">Teachers/NGOs: use school gardens to build AE competencies</text><path class="fl" id="pr12" data-cl="PR" d="M392,1802 C435,1802 460,824 486,824"/>
+<text class="bt" x="12" y="1821">Teachers/NGOs: develop living curriculum / experiential learning</text><path class="fl" id="pr13" data-cl="PR" d="M392,1818 C435,1818 460,816 486,816"/>
 
-<!-- ══ GOVERNANCE & POLICY — mixed solid/dashed ══ -->
-<text class="sh" x="8" y="1808" fill="#2D7A3A">Governance &amp; policy</text>
-<text class="bt" x="12" y="1823">Retailers: participate in sustainability initiatives / certifications [self]</text><path class="fl" id="gv0" data-cl="GV" d="M392,1820 C435,1820 460,866 486,866"/>
-<text class="bt" x="12" y="1839">Teachers: encourage procurement of school meals by AE criteria [self]</text><path class="fl" id="gv1" data-cl="GV" d="M392,1836 C435,1836 460,874 486,874"/>
-<text class="bt" x="12" y="1855">Policy makers: take up research findings into policy action [self]</text><path class="fl" id="gv2" data-cl="GV" d="M392,1852 C435,1852 460,882 486,882"/>
-<text class="bt" x="12" y="1871">Policy makers/NGOs: build leadership capacity of communities</text><path class="fl dashed" id="gv3" data-cl="GV" d="M392,1868 C435,1868 460,890 486,890"/>
-<text class="bt" x="12" y="1887">Policy makers: fund infrastructure and research for AE</text><path class="fl dashed" id="gv4" data-cl="GV" d="M392,1884 C435,1884 460,898 486,898"/>
-<text class="bt" x="12" y="1903">Policy makers: make extension services more efficient</text><path class="fl dashed" id="gv5" data-cl="GV" d="M392,1900 C435,1900 460,906 486,906"/>
-<text class="bt" x="12" y="1919">Policy makers: adopt political stance to value AE farmers</text><path class="fl dashed" id="gv6" data-cl="GV" d="M392,1916 C435,1916 460,898 486,898"/>
-<text class="bt" x="12" y="1935">Policy makers: agrarian reform / enabling policy environment</text><path class="fl dashed" id="gv7" data-cl="GV" d="M392,1932 C435,1932 460,890 486,890"/>
-<text class="bt" x="12" y="1951">Policy makers: support recovery of local seed systems</text><path class="fl dashed" id="gv8" data-cl="GV" d="M392,1948 C435,1948 460,882 486,882"/>
-<text class="bt" x="12" y="1967">Policy makers: working towards coherent policies</text><path class="fl dashed" id="gv9" data-cl="GV" d="M392,1964 C435,1964 460,874 486,874"/>
-<text class="bt" x="12" y="1983">Policy makers: establish responsible governance mechanisms</text><path class="fl dashed" id="gv10" data-cl="GV" d="M392,1980 C435,1980 460,866 486,866"/>
-<text class="bt" x="12" y="1999">Policy makers: policy incentives / subsidize AE inputs for input providers</text><path class="fl dashed" id="gv11" data-cl="GV" d="M392,1996 C435,1996 460,906 486,906"/>
-<text class="bt" x="12" y="2015">Policy makers/NGOs: improve availability of extension for farmers</text><path class="fl dashed" id="gv12" data-cl="GV" d="M392,2012 C435,2012 460,898 486,898"/>
-<text class="bt" x="12" y="2031">Government: prioritize AE products in public procurement</text><path class="fl dashed" id="gv13" data-cl="GV" d="M392,2028 C435,2028 460,890 486,890"/>
-<text class="bt" x="12" y="2047">Policy makers: price-level security / subsidies for AE for consumers</text><path class="fl dashed" id="gv14" data-cl="GV" d="M392,2044 C435,2044 460,882 486,882"/>
-<text class="bt" x="12" y="2063">NGOs/Researchers/Government: process support / institutional set-ups</text><path class="fl dashed" id="gv15" data-cl="GV" d="M392,2060 C435,2060 460,874 486,874"/>
+<!-- ══ GOVERNANCE & POLICY — mixed ══ -->
+<text class="sh" x="8" y="1850" fill="#2D7A3A">Governance &amp; policy</text>
+<!-- Self-directed (solid) -->
+<text class="bt" x="12" y="1865">Retailers: participate in sustainability initiatives / certifications [self]</text><path class="fl" id="gv0" data-cl="GV" d="M392,1862 C435,1862 460,924 486,924"/>
+<text class="bt" x="12" y="1881">Teachers: encourage procurement of school meals by AE criteria [self]</text><path class="fl" id="gv1" data-cl="GV" d="M392,1878 C435,1878 460,932 486,932"/>
+<text class="bt" x="12" y="1897">Policy makers: take up research findings into policy action [self]</text><path class="fl" id="gv2" data-cl="GV" d="M392,1894 C435,1894 460,940 486,940"/>
+<!-- Other-empowering (dashed) -->
+<text class="bt" x="12" y="1913">Policy makers/NGOs: build leadership capacity of communities</text><path class="fl dashed" id="gv3" data-cl="GV" d="M392,1910 C435,1910 460,948 486,948"/>
+<text class="bt" x="12" y="1929">Policy makers: fund infrastructure and research for AE</text><path class="fl dashed" id="gv4" data-cl="GV" d="M392,1926 C435,1926 460,956 486,956"/>
+<text class="bt" x="12" y="1945">Policy makers: make extension services more efficient</text><path class="fl dashed" id="gv5" data-cl="GV" d="M392,1942 C435,1942 460,964 486,964"/>
+<text class="bt" x="12" y="1961">Policy makers: adopt political stance to value AE farmers</text><path class="fl dashed" id="gv6" data-cl="GV" d="M392,1958 C435,1958 460,972 486,972"/>
+<text class="bt" x="12" y="1977">Policy makers: agrarian reform / enabling policy environment</text><path class="fl dashed" id="gv7" data-cl="GV" d="M392,1974 C435,1974 460,980 486,980"/>
+<text class="bt" x="12" y="1993">Policy makers: support recovery of local seed systems</text><path class="fl dashed" id="gv8" data-cl="GV" d="M392,1990 C435,1990 460,988 486,988"/>
+<text class="bt" x="12" y="2009">Policy makers: working towards coherent policies</text><path class="fl dashed" id="gv9" data-cl="GV" d="M392,2006 C435,2006 460,996 486,996"/>
+<text class="bt" x="12" y="2025">Policy makers: establish responsible governance mechanisms</text><path class="fl dashed" id="gv10" data-cl="GV" d="M392,2022 C435,2022 460,1004 486,1004"/>
+<text class="bt" x="12" y="2041">Policy makers: policy incentives / subsidize AE inputs for input providers</text><path class="fl dashed" id="gv11" data-cl="GV" d="M392,2038 C435,2038 460,964 486,964"/>
+<text class="bt" x="12" y="2057">Policy makers/NGOs: improve availability of extension for farmers</text><path class="fl dashed" id="gv12" data-cl="GV" d="M392,2054 C435,2054 460,956 486,956"/>
+<text class="bt" x="12" y="2073">Government: prioritize AE products in public procurement</text><path class="fl dashed" id="gv13" data-cl="GV" d="M392,2070 C435,2070 460,948 486,948"/>
+<text class="bt" x="12" y="2089">Policy makers: price-level security / subsidies for AE for consumers</text><path class="fl dashed" id="gv14" data-cl="GV" d="M392,2086 C435,2086 460,940 486,940"/>
+<text class="bt" x="12" y="2105">NGOs/Researchers/Government: process support / institutional set-ups</text><path class="fl dashed" id="gv15" data-cl="GV" d="M392,2102 C435,2102 460,932 486,932"/>
+<text class="bt" x="12" y="2121">Researchers: engage in science-policy dialogue to shape AE-enabling governance</text><path class="fl dashed" id="gv16" data-cl="GV" d="M392,2118 C435,2118 460,924 486,924"/>
 
 <!-- ══ RESOURCING — all dashed ══ -->
-<text class="sh" x="8" y="2090" fill="#2D7A3A">Resourcing</text>
-<text class="bt" x="12" y="2105">Financial staff: finance AE projects / investments</text><path class="fl dashed" id="rs0" data-cl="RS" d="M392,2102 C435,2102 460,992 486,992"/>
-<text class="bt" x="12" y="2121">Researchers: raise funds for further AE research</text><path class="fl dashed" id="rs1" data-cl="RS" d="M392,2118 C435,2118 460,999 486,999"/>
-<text class="bt" x="12" y="2137">Financial staff: financial products to de-risk AE input lines</text><path class="fl dashed" id="rs2" data-cl="RS" d="M392,2134 C435,2134 460,1006 486,1006"/>
-<text class="bt" x="12" y="2153">NGOs: provide funding for AE initiatives and value chain actors</text><path class="fl dashed" id="rs3" data-cl="RS" d="M392,2150 C435,2150 460,1013 486,1013"/>
-<text class="bt" x="12" y="2169">Government: fund extension work to alleviate resource constraints</text><path class="fl dashed" id="rs4" data-cl="RS" d="M392,2166 C435,2166 460,1006 486,1006"/>
-<text class="bt" x="12" y="2185">Government: structural and financial support for curriculum for teachers</text><path class="fl dashed" id="rs5" data-cl="RS" d="M392,2182 C435,2182 460,999 486,999"/>
-<text class="bt" x="12" y="2201">Government: fund research and science communication</text><path class="fl dashed" id="rs6" data-cl="RS" d="M392,2198 C435,2198 460,992 486,992"/>
+<text class="sh" x="8" y="2150" fill="#2D7A3A">Resourcing</text>
+<text class="bt" x="12" y="2165">Financial staff: finance AE projects / investments</text><path class="fl dashed" id="rs0" data-cl="RS" d="M392,2162 C435,2162 460,1052 486,1052"/>
+<text class="bt" x="12" y="2181">Researchers: raise funds for further AE research</text><path class="fl dashed" id="rs1" data-cl="RS" d="M392,2178 C435,2178 460,1060 486,1060"/>
+<text class="bt" x="12" y="2197">Financial staff: financial products to de-risk AE input lines</text><path class="fl dashed" id="rs2" data-cl="RS" d="M392,2194 C435,2194 460,1068 486,1068"/>
+<text class="bt" x="12" y="2213">NGOs: provide funding for AE initiatives and value chain actors</text><path class="fl dashed" id="rs3" data-cl="RS" d="M392,2210 C435,2210 460,1076 486,1076"/>
+<text class="bt" x="12" y="2229">Government: fund extension work to alleviate resource constraints</text><path class="fl dashed" id="rs4" data-cl="RS" d="M392,2226 C435,2226 460,1068 486,1068"/>
+<text class="bt" x="12" y="2245">Government: structural and financial support for curriculum for teachers</text><path class="fl dashed" id="rs5" data-cl="RS" d="M392,2242 C435,2242 460,1060 486,1060"/>
+<text class="bt" x="12" y="2261">Government: fund research and science communication</text><path class="fl dashed" id="rs6" data-cl="RS" d="M392,2258 C435,2258 460,1052 486,1052"/>
 
 <!-- LEGEND -->
-<rect x="8" y="2228" width="600" height="68" rx="6" fill="none" stroke="#ccc" stroke-width="0.5"/>
-<rect x="20" y="2240" width="14" height="14" rx="2" fill="#C0E6C8" stroke="#2D7A3A" stroke-width="1"/>
-<text font-size="8" x="40" y="2251" fill="#555">Entry point type cluster (box size = total entry points)</text>
-<line x1="20" y1="2268" x2="55" y2="2268" stroke="#3A9E50" stroke-width="1.5" opacity="0.8"/>
-<text font-size="8" x="62" y="2272" fill="#555">Self-directed · KG · PR · some GV</text>
-<line x1="220" y1="2268" x2="255" y2="2268" stroke="#3A9E50" stroke-width="1.5" stroke-dasharray="5,3" opacity="0.8"/>
-<text font-size="8" x="262" y="2272" fill="#555">Other-empowering · KS · RN · AV · RS · some GV</text>
-<text font-size="8" x="20" y="2288" fill="#888">KG · KS · RN · AV · PR · RS: direction inherent — no label needed · GV: mixed, [self] noted where applicable</text>
+<rect x="8" y="2288" width="680" height="68" rx="6" fill="none" stroke="#ccc" stroke-width="0.5"/>
+<rect x="20" y="2300" width="14" height="14" rx="2" fill="#C0E6C8" stroke="#2D7A3A" stroke-width="1"/>
+<text font-size="8" x="40" y="2311" fill="#555">Entry point type cluster (box size = total entry points)</text>
+<line x1="20" y1="2328" x2="55" y2="2328" stroke="#3A9E50" stroke-width="1.5" opacity="0.8"/>
+<text font-size="8" x="62" y="2332" fill="#555">Self-directed — KG · PR · some GV</text>
+<line x1="240" y1="2328" x2="275" y2="2328" stroke="#3A9E50" stroke-width="1.5" stroke-dasharray="5,3" opacity="0.8"/>
+<text font-size="8" x="282" y="2332" fill="#555">Other-empowering — KS · RN · AV · RS · some GV</text>
+<text font-size="8" x="20" y="2348" fill="#888">KG · KS · RN · AV · PR · RS: direction inherent — no label · GV: [self] noted where applicable · Click cluster to highlight</text>
 </svg>
 
 <script>
@@ -224,8 +225,8 @@ function hlC(cl){
     l.classList.toggle('active',m); l.classList.toggle('dim',!m);
   });
   document.querySelectorAll('.cb').forEach(b=>{
-    b.classList.toggle('selected', b.id==='c'+cl);
-    b.classList.toggle('dim', b.id!=='c'+cl);
+    b.classList.toggle('selected',b.id==='c'+cl);
+    b.classList.toggle('dim',b.id!=='c'+cl);
   });
 }
 document.querySelector('svg').addEventListener('click',e=>{
